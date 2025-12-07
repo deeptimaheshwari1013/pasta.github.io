@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorites</title>
+  <style>
+    :root {
+      --blue: #6da8ff;
+      --purple: #a88bff;
+      --pink: #ffb6e6;
+      --white: #ffffff;
+      --bg: #f7f5ff;
+      --text: #2a2a2a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    /* LEFT SIDEBAR NAV */
+    .sidenav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 220px;
+      background: linear-gradient(180deg, var(--blue), var(--purple), var(--pink));
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidenav a {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: left;
+      transition: background 0.2s ease;
+    }
+
+    .sidenav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--purple);
+    }
+
+    .favorites-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+    }
+
+    .fav-card {
+      background: var(--white);
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .fav-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    .fav-card .icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .fav-card h3 {
+      margin: 0.5rem 0;
+      color: var(--purple);
+    }
+
+    .fav-card ul {
+      padding-left: 1.2rem;
+      text-align: left;
+      margin: 0;
+    }
+
+    .fav-card li {
+      margin-bottom: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidenav">
+    <div style="font-size:2rem; font-weight:900; color:var(--white); padding:0 1.2rem;">D</div>
+    <a href="/">Home</a>
+    <a href="/mental-dump.html">Mental Dump</a>
+ 
+    <a href="/favorites.html">Fav Media</a>
+    <a href="/about.html">About</a>
+  </div>
+
+  <div class="content">
+    <section class="hero">
+      <h1>My Favorites</h1>
+      <p>um, so i ran out of ideas and energy to figure this page as of now. so this is just my normie page. </p>
+    </section>
+
+    <div class="favorites-grid">
+      <div class="fav-card">
+        <div class="icon">💬</div>
+        <h3>Quotes</h3>
+        <ul>
+          <li>"Be yourself; everyone else is already taken."</li>
+          <li>""</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">😂</div>
+        <h3>Memes</h3>
+        <ul>
+          <li>Drake Hotline Bling</li>
+          <li>Distracted Boyfriend</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">🏃‍♀️</div>
+        <h3>Routines</h3>
+        <ul>
+          <li>Morning jog</li>
+          <li>Daily journaling</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">🎬</div>
+        <h3>Movies</h3>
+        <ul>
+          <li>Inception</li>
+          <li>Spider-Man: Into the Spider-Verse</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">🎵</div>
+        <h3>Songs</h3>
+        <ul>
+          <li>Blinding Lights</li>
+          <li>Levitating</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">📚</div>
+        <h3>Books</h3>
+        <ul>
+          <li>Harry Potter Series</li>
+          <li>1984</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">🍲</div>
+        <h3>Recipes</h3>
+        <ul>
+          <li>Spaghetti Carbonara</li>
+          <li>Pancakes</li>
+        </ul>
+      </div>
+
+      <div class="fav-card">
+        <div class="icon">🎥</div>
+        <h3>Videos</h3>
+        <ul>
+          <li>TED Talks</li>
+          <li>Travel vlogs</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

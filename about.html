@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <style>
+    :root {
+      --blue: #6da8ff;
+      --purple: #a88bff;
+      --pink: #ffb6e6;
+      --white: #ffffff;
+      --bg: #f7f5ff;
+      --text: #2a2a2a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .sidenav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 220px;
+      background: linear-gradient(180deg, var(--blue), var(--purple), var(--pink));
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .sidenav a {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: left;
+      transition: background 0.2s ease;
+    }
+
+    .sidenav a:hover {
+      background: rgba(255,255,255,0.15);
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 2rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--purple);
+    }
+
+    .about-icon {
+      font-size: 3rem;
+      background: var(--white);
+      border-radius: 50%;
+      padding: 1rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-section {
+      max-width: 700px;
+      text-align: center;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .about-section h2 {
+      margin-top: 0;
+      color: var(--purple);
+    }
+
+    .about-section p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidenav">
+    <div style="font-size:2rem; font-weight:900; color:var(--white); padding:0 1.2rem;">D</div>
+    <a href="/">Home</a>
+    <a href="/mental-dump.html">Mental Dump</a>
+  
+    <a href="/favorites.html">Fav Media</a>
+    <a href="/about.html">About</a>
+  </div>
+
+  <div class="content">
+    <section class="hero">
+      <div class="about-icon">👾</div>
+      <h1>About Me</h1>
+    </section>
+
+    <div class="about-section">
+      <h2><i>"allow yourself</i> to shine without the desire to be seen"</h2>
+      <p>i created this space for myself to share a part of me that i've kept hidden for all my life. from the spontaneous 2AM that my notes app has seen to the picture dumps my friends get. i wish be heard and known. i wish to find my own group of people that i can look up to. To sum it up, I'm just a chronically confused girl. Thank you for your time :)  </p>
+    </div>
+  </div>
+</body>
+</html>
